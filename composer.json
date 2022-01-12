@@ -1,0 +1,10 @@
+{
+    "name": "hexlet/code",
+    "authors": [
+        {
+            "name": "Pavel Kondybailo",
+            "email": "pavelkondybailo@yandex.by"
+        }
+    ],
+    "require": {}
+}
