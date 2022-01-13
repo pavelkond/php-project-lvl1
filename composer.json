@@ -1,10 +1,14 @@
 {
     "name": "hexlet/code",
+    "description": "lvl 1 php project",
     "authors": [
         {
             "name": "Pavel Kondybailo",
             "email": "pavelkondybailo@yandex.by"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
 }
