@@ -1,8 +1,8 @@
 name: phpcs
-on: push
+on: [push]
 jobs:
   code-sniffer:
     runs-on: ubuntu-latest
     steps:
-      -name: run-linter
-      run: make lint
+      - name: run-linter
+        run: make lint
