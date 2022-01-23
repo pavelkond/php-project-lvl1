@@ -12,7 +12,8 @@
             "src/Cli.php",
             "src/Even.php",
             "src/Engine.php",
-            "src/Calc.php"
+            "src/Calc.php",
+            "src/Gcd.php"
         ]
     },
     "require": {
@@ -21,7 +22,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6"
