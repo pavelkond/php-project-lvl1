@@ -8,3 +8,4 @@ Demonstration of brain games:
 - [brain-calc](https://asciinema.org/a/WlbQWcGE2Q3ZqDq53Lrfd4T2R)
 - [brain-gcd](https://asciinema.org/a/zcgol0xx30IT1bAUOog9ejnvF)
 - [brain-progression](https://asciinema.org/a/AI5ON1N5icO5oRjLrqohOGJdZ)
+- [brain-prime](https://asciinema.org/a/nbbs27j0vIEGJMeAoDVKAJUzo)
