@@ -6,6 +6,7 @@ use function Brain\Games\Engine\playGame;
 
 function doOperation(int $num1, int $num2, string $operation): int
 {
+    $answer = 0;
     switch ($operation) {
         case "+":
             $answer =  $num1 + $num2;
