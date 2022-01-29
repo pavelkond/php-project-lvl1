@@ -9,16 +9,23 @@ function gcd($x, $y)
     return $y === 0 ? $x : gcd($y, $x % $y);
 }
 
-function playGcdGame()
+function generateTasks(): array
 {
     $tasks = [];
-    for ($i = 0; $i < 3; $i++) {
+    for ($round = 0, $maxRounds = 3; $round < $maxRounds; $round++) {
         $num1 = rand(1, 50);
         $num2 = rand(1, 50);
         $question = "{$num1} {$num2}";
         $answer = gcd($num1, $num2);
         $tasks[] = [$question, $answer];
     }
+
+    return $tasks;
+}
+
+function playGcdGame()
+{
+    $tasks = generateTasks();
     $rules = 'Find the greatest common divisor of given numbers.';
     playGame($rules, $tasks);
 }

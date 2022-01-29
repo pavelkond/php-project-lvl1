@@ -4,28 +4,37 @@ namespace Brain\Games\Calc;
 
 use function Brain\Games\Engine\playGame;
 
-function playCalcGame()
+function doOperation(int $num1, int $num2, string $operation): int
+{
+    switch ($operation) {
+        case "+":
+            return $num1 + $num2;
+        case "*":
+            return $num1 * $num2;
+        case "-":
+            return $num1 - $num2;
+    }
+}
+
+function generateTasks(): array
 {
     $tasks = [];
     $operations = ["+", "*", "-"];
-    for ($i = 0; $i < 3; $i++) {
+    for ($round = 0, $maxRounds = 3; $round < $maxRounds; $round++) {
         $num1 = rand(1, 50);
         $num2 = rand(1, 50);
-        $operIndex = array_rand($operations);
-        switch ($operations[$operIndex]) {
-            case "+":
-                $answer = $num1 + $num2;
-                break;
-            case "*":
-                $answer = $num1 * $num2;
-                break;
-            case "-":
-                $answer = $num1 - $num2;
-                break;
-        }
-        $question = "{$num1} {$operations[$operIndex]} {$num2}";
+        $operationIndex = array_rand($operations);
+        $answer = doOperation($num1, $num2, $operations[$operationIndex]);
+        $question = "{$num1} {$operations[$operationIndex]} {$num2}";
         $tasks[] = [$question, $answer];
     }
+
+    return $tasks;
+}
+
+function playCalcGame()
+{
+    $tasks = generateTasks();
     $rules = "What is the result of the expression?";
     playGame($rules, $tasks);
 }

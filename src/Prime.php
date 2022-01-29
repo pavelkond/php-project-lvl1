@@ -21,7 +21,7 @@ function isPrime(int $number): bool
 function generateTasks(): array
 {
     $tasks = [];
-    for ($i = 0; $i < 3; $i++) {
+    for ($round = 0, $maxRounds = 3; $round < $maxRounds; $round++) {
         $questionNum = rand(1, 30);
         $answer = isPrime($questionNum) ? "yes" : "no";
         $tasks[] = [$questionNum, $answer];
