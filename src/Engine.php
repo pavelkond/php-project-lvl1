@@ -24,6 +24,7 @@ function playGame(string $gameRules, array $tasks)
             line("Correct!");
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'", $playerAnswer, $answer);
+            line("Let's try again, %s!", $playerName);
             return;
         }
     }
