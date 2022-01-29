@@ -6,7 +6,7 @@ use function Brain\Games\Engine\playGame;
 
 function isPrime(int $number): bool
 {
-    if ($number <= 2) {
+    if ($number < 2) {
         return false;
     }
     for ($i = 2; $i <= $number / 2; $i++) {
