@@ -4,7 +4,7 @@ namespace Brain\Games\Gcd;
 
 use function Brain\Games\Engine\playGame;
 
-function gcd($x, $y)
+function gcd(int $x, int $y): int
 {
     return $y === 0 ? $x : gcd($y, $x % $y);
 }
