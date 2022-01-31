@@ -11,8 +11,6 @@ Brain Games is a set of math games written in PHP. This set contains the followi
 4. [brain-progression](https://asciinema.org/a/AI5ON1N5icO5oRjLrqohOGJdZ) - find if a number is prime
 5. [brain-prime](https://asciinema.org/a/nbbs27j0vIEGJMeAoDVKAJUzo) - find a missing number in progression
 
-***
-
 ## How to play
 To start one of the games you have to call the following command:  
 ``make <game-name>``
