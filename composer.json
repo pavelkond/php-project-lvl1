@@ -10,12 +10,12 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Even.php",
+            "src/Game/Even.php",
             "src/Engine.php",
-            "src/Calc.php",
-            "src/Gcd.php",
-            "src/Progression.php",
-            "src/Prime.php"
+            "src/Game/Calc.php",
+            "src/Game/Gcd.php",
+            "src/Game/Progression.php",
+            "src/Game/Prime.php"
         ]
     },
     "require": {
